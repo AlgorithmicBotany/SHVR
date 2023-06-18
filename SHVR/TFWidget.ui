@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TFWidget</class>
+ <widget class="QWidget" name="TFWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>263</width>
+    <height>469</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TFWidget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="18" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_PaintIsoMin"/>
+   </item>
+   <item row="19" column="0" colspan="3">
+    <widget class="DoubleSlider" name="horizontalSlider_PaintIsoMin">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QCheckBox" name="checkBox_AutoUpdateGraph">
+     <property name="text">
+      <string>Auto Update</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="0" colspan="3">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="2">
+    <widget class="QCheckBox" name="checkBox_AutoUpdatePaintIsoMin">
+     <property name="text">
+      <string>Auto Update
+to Min TF</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="2">
+    <widget class="QPushButton" name="pushButton_EditColorCP">
+     <property name="text">
+      <string>Edit TF Colour</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="1" colspan="2">
+    <widget class="QPushButton" name="pushButton_UpdateGraph">
+     <property name="text">
+      <string>Update TF</string>
+     </property>
+    </widget>
+   </item>
+   <item row="20" column="2">
+    <widget class="QCheckBox" name="checkBox_AutoUpdateOffsetValue">
+     <property name="text">
+      <string>Auto Update
+to Paint IsoMin</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_HapticIsoMin"/>
+   </item>
+   <item row="20" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Offset Value</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Haptic IsoMin</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="1" colspan="2">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_xValue"/>
+   </item>
+   <item row="10" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Selected TF:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="0" colspan="3">
+    <widget class="DoubleSlider" name="horizontalSlider_HapticIsoMin">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>Y: Voxel Opacity</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="2">
+    <widget class="QCheckBox" name="checkBox_AutoUpdateHapticIsoMin">
+     <property name="text">
+      <string>Auto Update
+to Min TF</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="2">
+    <widget class="QCheckBox" name="checkBox_LockIndices">
+     <property name="text">
+      <string>Lock Indices</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="AOOpenGLWidget" name="glWidget_graph">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>100</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="20" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_OffsetValue"/>
+   </item>
+   <item row="11" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Iso Value:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="1" colspan="2">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_yValue">
+     <property name="decimals">
+      <number>3</number>
+     </property>
+     <property name="singleStep">
+      <double>0.001000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="0">
+    <widget class="QLabel" name="label_updateStatus">
+     <property name="text">
+      <string>Status:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Opacity:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>X: Voxel Density</string>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="0">
+    <widget class="QLabel" name="label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Paint IsoMin</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1">
+    <widget class="QSpinBox" name="spinBox_SelectedCPIdx"/>
+   </item>
+   <item row="21" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>Iso Update Rate</string>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_IsoUpdateRate"/>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>AOOpenGLWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>LightWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>DoubleSlider</class>
+   <extends>QSlider</extends>
+   <header>CustomWidgets.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>doubleSpinBox_xValue</tabstop>
+  <tabstop>doubleSpinBox_yValue</tabstop>
+  <tabstop>spinBox_SelectedCPIdx</tabstop>
+  <tabstop>doubleSpinBox_HapticIsoMin</tabstop>
+  <tabstop>doubleSpinBox_PaintIsoMin</tabstop>
+  <tabstop>doubleSpinBox_OffsetValue</tabstop>
+  <tabstop>doubleSpinBox_IsoUpdateRate</tabstop>
+  <tabstop>checkBox_AutoUpdateHapticIsoMin</tabstop>
+  <tabstop>checkBox_AutoUpdatePaintIsoMin</tabstop>
+  <tabstop>checkBox_AutoUpdateOffsetValue</tabstop>
+  <tabstop>pushButton_EditColorCP</tabstop>
+  <tabstop>checkBox_AutoUpdateGraph</tabstop>
+  <tabstop>checkBox_LockIndices</tabstop>
+  <tabstop>horizontalSlider_HapticIsoMin</tabstop>
+  <tabstop>horizontalSlider_PaintIsoMin</tabstop>
+  <tabstop>pushButton_UpdateGraph</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

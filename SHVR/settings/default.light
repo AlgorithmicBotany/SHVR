@@ -1,0 +1,12 @@
+-autoApplyUpdates 0
+-lockIDPositions 0
+-raycastStepSize 0.0005
+-raycastMaxSteps 4000
+-aoStepSize 0.005
+-aoMaxSteps 30
+-intensityAmbient 0.8
+-intensityDiffuse 0.15
+-intensitySpecular 0.1
+-specularExponent 128
+-linear_tf1D 0 255,255,255,0
+-linear_tf1D 1 255,255,255,255

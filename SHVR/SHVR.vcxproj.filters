@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Header Files\Managers">
+      <UniqueIdentifier>{3b794a96-7eea-4e19-801c-188b0dd90bb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers">
+      <UniqueIdentifier>{6c7ef509-34f8-4d7a-b7de-e73d993b80c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Extra">
+      <UniqueIdentifier>{6f09e8ee-e3e0-4644-ae41-8bbb2313c789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Extra">
+      <UniqueIdentifier>{63406764-6923-4fcc-96fc-0bc62f6a3778}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WidgetsAndWindows">
+      <UniqueIdentifier>{c86cdbc4-5151-41e4-9409-ea12669de264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WidgetsAndWindows">
+      <UniqueIdentifier>{553bd7a9-d27a-41b0-88f1-cfb53915bb35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WidgetsAndWindows\UI">
+      <UniqueIdentifier>{93514dfc-a5e2-4f2f-8f6c-29141c5951e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WidgetsAndWindows\UI">
+      <UniqueIdentifier>{9c84a7f0-494d-44d8-902a-8fda532c7a75}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ParameterManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorMap.cpp">
+      <Filter>Source Files\Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLWindow.cpp">
+      <Filter>Source Files\WidgetsAndWindows</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderProgram.cpp">
+      <Filter>Source Files\Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="TransferFunction.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="volumes.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeNetwork.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderObject.cpp">
+      <Filter>Source Files\Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexObject.cpp">
+      <Filter>Source Files\Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureObject.cpp">
+      <Filter>Source Files\Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="mathLib.cpp">
+      <Filter>Source Files\Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="Cameras.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Haptics.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Source Files\WidgetsAndWindows</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CIsoSurface.cpp">
+      <Filter>Source Files\Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph2D.cpp">
+      <Filter>Source Files\Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomWidgets.cpp">
+      <Filter>Source Files\Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph2DOpenGL.cpp">
+      <Filter>Source Files\Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="AmbientOcclusion.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ParameterStructs.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="VolumeTemplate.cpp">
+      <Filter>Source Files\Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="FileOpenWidget.cpp">
+      <Filter>Source Files\WidgetsAndWindows\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupWidget.cpp">
+      <Filter>Source Files\WidgetsAndWindows\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpKeysWidget.cpp">
+      <Filter>Source Files\WidgetsAndWindows\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TFWidget.cpp">
+      <Filter>Source Files\WidgetsAndWindows\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="FileInputData.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="FileIO.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingVisualWidget.cpp">
+      <Filter>Source Files\WidgetsAndWindows\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingRenderWidget.cpp">
+      <Filter>Source Files\WidgetsAndWindows\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingScreenshotWidget.cpp">
+      <Filter>Source Files\WidgetsAndWindows\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingProbeWidget.cpp">
+      <Filter>Source Files\WidgetsAndWindows\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="LightWidget.cpp">
+      <Filter>Source Files\WidgetsAndWindows\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpAboutWidget.cpp">
+      <Filter>Source Files\WidgetsAndWindows\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Source Files\Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="OffsetWidget.cpp">
+      <Filter>Source Files\WidgetsAndWindows\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="OffsetVolume.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindowObjects.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusBar.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="VolumeFill.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Events.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="WidgetManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="EventFilter.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="OpenGLWindow.h">
+      <Filter>Header Files\WidgetsAndWindows</Filter>
+    </QtMoc>
+    <QtMoc Include="MainWindow.h">
+      <Filter>Header Files\WidgetsAndWindows</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomWidgets.h">
+      <Filter>Header Files\Extra</Filter>
+    </QtMoc>
+    <QtMoc Include="Graph2DOpenGL.h">
+      <Filter>Header Files\Extra</Filter>
+    </QtMoc>
+    <QtMoc Include="FileOpenWidget.h">
+      <Filter>Header Files\WidgetsAndWindows\UI</Filter>
+    </QtMoc>
+    <QtMoc Include="HelpKeysWidget.h">
+      <Filter>Header Files\WidgetsAndWindows\UI</Filter>
+    </QtMoc>
+    <QtMoc Include="GroupWidget.h">
+      <Filter>Header Files\WidgetsAndWindows\UI</Filter>
+    </QtMoc>
+    <QtMoc Include="TFWidget.h">
+      <Filter>Header Files\WidgetsAndWindows\UI</Filter>
+    </QtMoc>
+    <QtMoc Include="SettingVisualWidget.h">
+      <Filter>Header Files\WidgetsAndWindows\UI</Filter>
+    </QtMoc>
+    <QtMoc Include="SettingScreenshotWidget.h">
+      <Filter>Header Files\WidgetsAndWindows\UI</Filter>
+    </QtMoc>
+    <QtMoc Include="SettingRenderWidget.h">
+      <Filter>Header Files\WidgetsAndWindows\UI</Filter>
+    </QtMoc>
+    <QtMoc Include="SettingProbeWidget.h">
+      <Filter>Header Files\WidgetsAndWindows\UI</Filter>
+    </QtMoc>
+    <QtMoc Include="LightWidget.h">
+      <Filter>Header Files\WidgetsAndWindows\UI</Filter>
+    </QtMoc>
+    <QtMoc Include="HelpAboutWidget.h">
+      <Filter>Header Files\WidgetsAndWindows\UI</Filter>
+    </QtMoc>
+    <QtMoc Include="OffsetWidget.h">
+      <Filter>Header Files\WidgetsAndWindows\UI</Filter>
+    </QtMoc>
+    <QtMoc Include="Events.h">
+      <Filter>Header Files\Managers</Filter>
+    </QtMoc>
+    <QtMoc Include="EventFilter.h">
+      <Filter>Header Files\Managers</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="MainWindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="TFWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="GroupWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="HelpKeysWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="HelpAboutWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="SettingVisualWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="SettingProbeWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="SettingRenderWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="SettingScreenshotWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="LightWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="OffsetWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="FileOpenWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="MainWindow.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Array3D.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="VolumeTemplate.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorMap.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="RGB.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderProgram.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeNetwork.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="volumes.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="TransferFunction.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderObject.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexObject.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureObject.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="mathLib.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="Cameras.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Haptics.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="CIsoSurface.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="Vectors.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph2D.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="AmbientOcclusion.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ParameterStructs.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="FileInputData.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="FileIO.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="OffsetVolume.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="VolumeFill.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindowObjects.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusBar.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ParameterManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="WidgetManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

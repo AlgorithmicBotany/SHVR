@@ -1,0 +1,43 @@
+;===VOLUME SCREEN INFORMATION===
+;Projection Matrix
+-fov 30
+-nearPlane 0.001
+-farPlane 100
+
+;Volume Matrix
+-volumeM 1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1
+-workspaceScale 1
+
+;Clipping Plane
+-cutPlane 1,1,1,0,0,0
+-clipPlaneNear 0.02
+-clipPlaneFar 10
+
+;Cursor Settings
+-cursorScale 5
+-silhouetteScale 6
+-paintScale 5
+
+;Haptic Settings
+-hapticType 0
+-hapticSpringForce 400
+-hapticDampingForce 100
+-hapticConfidenceRate 0.4
+
+;Other Visual Settings
+-hudEnabled 0
+-arrowEnabled 1
+-lineEnabled 1
+-proxyEnabled 0
+-volumeEnabled 1
+-objectEnabled 1
+-forceLineEnabled 1
+-screenType 0
+-paintType 1
+-offsetType 1
+-groupNum 1
+-maxNumberOfCommands 50
+
+-gridEnabled 0
+-gridType 6
+-gridSections 1

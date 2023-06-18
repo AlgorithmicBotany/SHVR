@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F6F60D24-7BEF-42EF-9148-A0247EB9D9F7}</ProjectGuid>
+    <Keyword>QtVS_v302</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>5.14.1</QtInstall>
+    <QtModules>core;gui;opengl;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+    <QtQMLDebugEnable>true</QtQMLDebugEnable>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>5.14.1</QtInstall>
+    <QtModules>core;gui;opengl;widgets;</QtModules>
+    <QtQMLDebugEnable>true</QtQMLDebugEnable>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;.\;$(ProjectDir)external\chai3d-3.2.0\src;$(ProjectDir)external\chai3d-3.2.0\external\Eigen;$(ProjectDir)external\tiff\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(ProjectDir)external\chai3d-3.2.0\lib\Release\x64\chai3d.lib;$(ProjectDir)external\tiff\lib\tiff.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;.\;$(ProjectDir)external\chai3d-3.2.0\src;$(ProjectDir)external\chai3d-3.2.0\external\Eigen;$(ProjectDir)external\tiff\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>$(ProjectDir)external\chai3d-3.2.0\lib\Release\x64\chai3d.lib;$(ProjectDir)external\tiff\lib\tiff.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Commands.cpp" />
+    <ClCompile Include="EventFilter.cpp" />
+    <ClCompile Include="Events.cpp" />
+    <ClCompile Include="HelpAboutWidget.cpp" />
+    <ClCompile Include="AmbientOcclusion.cpp" />
+    <ClCompile Include="LightWidget.cpp" />
+    <ClCompile Include="Cameras.cpp" />
+    <ClCompile Include="CIsoSurface.cpp" />
+    <ClCompile Include="ColorMap.cpp" />
+    <ClCompile Include="CustomWidgets.cpp" />
+    <ClCompile Include="FileOpenWidget.cpp" />
+    <ClCompile Include="FileIO.cpp" />
+    <ClCompile Include="Graph2D.cpp" />
+    <ClCompile Include="Graph2DOpenGL.cpp" />
+    <ClCompile Include="GroupWidget.cpp" />
+    <ClCompile Include="Haptics.cpp" />
+    <ClCompile Include="HelpKeysWidget.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="MainWindowObjects.cpp" />
+    <ClCompile Include="ParameterManager.cpp" />
+    <ClCompile Include="mathLib.cpp" />
+    <ClCompile Include="NodeNetwork.cpp" />
+    <ClCompile Include="OffsetVolume.cpp" />
+    <ClCompile Include="OffsetWidget.cpp" />
+    <ClCompile Include="OpenGLWindow.cpp" />
+    <ClCompile Include="ParameterStructs.cpp" />
+    <ClCompile Include="SettingProbeWidget.cpp" />
+    <ClCompile Include="RenderObject.cpp" />
+    <ClCompile Include="FileInputData.cpp" />
+    <ClCompile Include="SettingRenderWidget.cpp" />
+    <ClCompile Include="SettingScreenshotWidget.cpp" />
+    <ClCompile Include="ShaderProgram.cpp" />
+    <ClCompile Include="StatusBar.cpp" />
+    <ClCompile Include="TextureObject.cpp" />
+    <ClCompile Include="TFWidget.cpp" />
+    <ClCompile Include="TransferFunction.cpp" />
+    <ClCompile Include="VertexObject.cpp" />
+    <ClCompile Include="SettingVisualWidget.cpp" />
+    <ClCompile Include="VolumeFill.cpp" />
+    <ClCompile Include="volumes.cpp" />
+    <ClCompile Include="VolumeTemplate.cpp" />
+    <ClCompile Include="WidgetManager.cpp" />
+    <ClCompile Include="World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MainWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="FileOpenWidget.ui" />
+    <QtUic Include="HelpAboutWidget.ui" />
+    <QtUic Include="LightWidget.ui" />
+    <QtUic Include="GroupWidget.ui" />
+    <QtUic Include="HelpKeysWidget.ui" />
+    <QtUic Include="MainWindow.ui" />
+    <QtUic Include="OffsetWidget.ui" />
+    <QtUic Include="SettingProbeWidget.ui" />
+    <QtUic Include="SettingRenderWidget.ui" />
+    <QtUic Include="SettingScreenshotWidget.ui" />
+    <QtUic Include="TFWidget.ui" />
+    <QtUic Include="SettingVisualWidget.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="MainWindow.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="LightWidget.h" />
+    <QtMoc Include="HelpAboutWidget.h" />
+    <ClInclude Include="AmbientOcclusion.h" />
+    <ClInclude Include="Array3D.h" />
+    <ClInclude Include="Cameras.h" />
+    <ClInclude Include="CIsoSurface.h" />
+    <ClInclude Include="ColorMap.h" />
+    <QtMoc Include="CustomWidgets.h" />
+    <QtMoc Include="FileOpenWidget.h" />
+    <ClInclude Include="Commands.h" />
+    <QtMoc Include="Events.h" />
+    <QtMoc Include="EventFilter.h" />
+    <ClInclude Include="FileIO.h" />
+    <ClInclude Include="Graph2D.h" />
+    <QtMoc Include="Graph2DOpenGL.h" />
+    <QtMoc Include="GroupWidget.h" />
+    <ClInclude Include="Haptics.h" />
+    <QtMoc Include="HelpKeysWidget.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="MainWindowObjects.h" />
+    <ClInclude Include="mathLib.h" />
+    <ClInclude Include="NodeNetwork.h" />
+    <QtMoc Include="OffsetWidget.h" />
+    <ClInclude Include="OffsetVolume.h" />
+    <ClInclude Include="ParameterStructs.h" />
+    <QtMoc Include="SettingProbeWidget.h" />
+    <ClInclude Include="RenderObject.h" />
+    <QtMoc Include="SettingRenderWidget.h" />
+    <QtMoc Include="SettingScreenshotWidget.h" />
+    <ClInclude Include="StatusBar.h" />
+    <ClInclude Include="TextureObject.h" />
+    <QtMoc Include="TFWidget.h" />
+    <ClInclude Include="Vectors.h" />
+    <QtMoc Include="SettingVisualWidget.h" />
+    <ClInclude Include="VolumeFill.h" />
+    <ClInclude Include="WidgetManager.h" />
+    <ClInclude Include="World.h" />
+    <QtMoc Include="OpenGLWindow.h" />
+    <ClInclude Include="RGB.h" />
+    <ClInclude Include="FileInputData.h" />
+    <ClInclude Include="ShaderProgram.h" />
+    <ClInclude Include="TransferFunction.h" />
+    <ClInclude Include="VertexObject.h" />
+    <ClInclude Include="VolumeTemplate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ParameterManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="volumes.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

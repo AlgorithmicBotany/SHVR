@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GroupWidget</class>
+ <widget class="QWidget" name="GroupWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>478</width>
+    <height>441</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GroupWidget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="3" column="1">
+    <widget class="QPushButton" name="pushButton_color3">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="5">
+    <widget class="QSpinBox" name="spinBox_maskOpacity8">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="6">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_linkScale6"/>
+   </item>
+   <item row="6" column="2">
+    <widget class="QCheckBox" name="checkBox_object6">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="5">
+    <widget class="QSpinBox" name="spinBox_maskOpacity1">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QCheckBox" name="checkBox_object4">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="2">
+    <widget class="QPushButton" name="pushButton_toggleAllObjects">
+     <property name="text">
+      <string>Toggle All
+Objects</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="label_14">
+     <property name="text">
+      <string>9</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="2">
+    <widget class="QCheckBox" name="checkBox_object8">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="6">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_linkScale3"/>
+   </item>
+   <item row="4" column="6">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_linkScale4"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="6">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_linkScale7"/>
+   </item>
+   <item row="3" column="5">
+    <widget class="QSpinBox" name="spinBox_maskOpacity3">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="pushButton_color1">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2">
+    <widget class="QCheckBox" name="checkBox_object7">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QCheckBox" name="checkBox_mask1">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLabel" name="label_17">
+     <property name="text">
+      <string>Color</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QCheckBox" name="checkBox_object2">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="QPushButton" name="pushButton_color9">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="3">
+    <widget class="QCheckBox" name="checkBox_mask9">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="pushButton_color2">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLabel" name="label_20">
+     <property name="text">
+      <string>Object
+Enabled</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="3">
+    <widget class="QCheckBox" name="checkBox_mask6">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="3">
+    <widget class="QPushButton" name="pushButton_toggleAllMasks">
+     <property name="text">
+      <string>Toggle
+All Masks</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Mask
+Enabled</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QCheckBox" name="checkBox_object5">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="2">
+    <widget class="QCheckBox" name="checkBox_object9">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="3">
+    <widget class="QCheckBox" name="checkBox_mask7">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QCheckBox" name="checkBox_object1">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="6">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_linkScale2"/>
+   </item>
+   <item row="12" column="5">
+    <widget class="QPushButton" name="pushButton_resetMaskOpacity">
+     <property name="text">
+      <string>Reset Mask
+ Opacity</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QPushButton" name="pushButton_color6">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="label_13">
+     <property name="text">
+      <string>8</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QCheckBox" name="checkBox_object3">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="5">
+    <widget class="QSpinBox" name="spinBox_maskOpacity9">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QCheckBox" name="checkBox_mask5">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0" colspan="8">
+    <widget class="QLabel" name="label_19">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>---------------------------------------------------------------------------------</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="QPushButton" name="pushButton_color8">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="3">
+    <widget class="QCheckBox" name="checkBox_mask4">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="5">
+    <widget class="QSpinBox" name="spinBox_maskOpacity4">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="6">
+    <widget class="QPushButton" name="pushButton_resetLinkScale">
+     <property name="text">
+      <string>Reset
+Link Scale</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="5">
+    <widget class="QSpinBox" name="spinBox_maskOpacity7">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="2">
+    <widget class="QCheckBox" name="checkBox_autoUpdate">
+     <property name="text">
+      <string>Auto
+Update</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="5">
+    <widget class="QSpinBox" name="spinBox_maskOpacity6">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QPushButton" name="pushButton_color5">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="6">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Link
+Scale</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_12">
+     <property name="text">
+      <string>7</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="6">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_linkScale9"/>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>5</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="6">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_linkScale8"/>
+   </item>
+   <item row="7" column="1">
+    <widget class="QPushButton" name="pushButton_color7">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="3">
+    <widget class="QCheckBox" name="checkBox_mask8">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="6">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_linkScale1"/>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Groups</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>6</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="0" colspan="2">
+    <widget class="QLabel" name="label_updateStatus">
+     <property name="text">
+      <string>Status:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QCheckBox" name="checkBox_mask2">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QPushButton" name="pushButton_color4">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="6">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_linkScale5"/>
+   </item>
+   <item row="3" column="3">
+    <widget class="QCheckBox" name="checkBox_mask3">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Mask
+Opacity</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="3" colspan="4">
+    <widget class="QPushButton" name="pushButton_updateMaskLayers">
+     <property name="text">
+      <string>Update Mask and Layers</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="5">
+    <widget class="QSpinBox" name="spinBox_maskOpacity2">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="5">
+    <widget class="QSpinBox" name="spinBox_maskOpacity5">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Paint
+Over</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QCheckBox" name="checkBox_paintOver2">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QCheckBox" name="checkBox_paintOver1">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="4">
+    <widget class="QCheckBox" name="checkBox_paintOver3">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="4">
+    <widget class="QCheckBox" name="checkBox_paintOver4">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="4">
+    <widget class="QCheckBox" name="checkBox_paintOver5">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="4">
+    <widget class="QCheckBox" name="checkBox_paintOver6">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="4">
+    <widget class="QCheckBox" name="checkBox_paintOver7">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="4">
+    <widget class="QCheckBox" name="checkBox_paintOver8">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="4">
+    <widget class="QCheckBox" name="checkBox_paintOver9">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="3">
+    <widget class="QSpinBox" name="spinBox_volumeOpacity">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="2">
+    <widget class="QLabel" name="label_16">
+     <property name="text">
+      <string>Volume
+Opacity</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="1">
+    <widget class="QPushButton" name="pushButton_colorBackground">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0">
+    <widget class="QLabel" name="label_15">
+     <property name="text">
+      <string>Background
+Color</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="5">
+    <widget class="QLabel" name="label_18">
+     <property name="text">
+      <string>Mask Color
+Intensity</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="6">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_maskIntensity">
+     <property name="decimals">
+      <number>3</number>
+     </property>
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.001000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="4">
+    <widget class="QCheckBox" name="checkBox_paintOver0">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>pushButton_color1</tabstop>
+  <tabstop>pushButton_color2</tabstop>
+  <tabstop>pushButton_color3</tabstop>
+  <tabstop>pushButton_color4</tabstop>
+  <tabstop>pushButton_color5</tabstop>
+  <tabstop>pushButton_color6</tabstop>
+  <tabstop>pushButton_color7</tabstop>
+  <tabstop>pushButton_color8</tabstop>
+  <tabstop>pushButton_color9</tabstop>
+  <tabstop>checkBox_object1</tabstop>
+  <tabstop>checkBox_object2</tabstop>
+  <tabstop>checkBox_object3</tabstop>
+  <tabstop>checkBox_object4</tabstop>
+  <tabstop>checkBox_object5</tabstop>
+  <tabstop>checkBox_object6</tabstop>
+  <tabstop>checkBox_object7</tabstop>
+  <tabstop>checkBox_object8</tabstop>
+  <tabstop>checkBox_object9</tabstop>
+  <tabstop>checkBox_mask1</tabstop>
+  <tabstop>checkBox_mask2</tabstop>
+  <tabstop>checkBox_mask3</tabstop>
+  <tabstop>checkBox_mask4</tabstop>
+  <tabstop>checkBox_mask5</tabstop>
+  <tabstop>checkBox_mask6</tabstop>
+  <tabstop>checkBox_mask7</tabstop>
+  <tabstop>checkBox_mask8</tabstop>
+  <tabstop>checkBox_mask9</tabstop>
+  <tabstop>pushButton_toggleAllObjects</tabstop>
+  <tabstop>pushButton_toggleAllMasks</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

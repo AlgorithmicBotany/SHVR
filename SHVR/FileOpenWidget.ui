@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileOpenWidget</class>
+ <widget class="QWidget" name="FileOpenWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>881</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Open File</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <item row="1" column="1" colspan="4">
+    <widget class="QGroupBox" name="groupBox_VolumeInfo">
+     <property name="title">
+      <string>Volume Information</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_9">
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_width">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Width</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_height">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Height</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="label_depth">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Depth</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_resolution">
+        <property name="text">
+         <string>Resolution*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="spinBox_resolutionWidth">
+        <property name="maximum">
+         <number>99999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QSpinBox" name="spinBox_resolutionDepth">
+        <property name="maximum">
+         <number>99999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_spacing">
+        <property name="text">
+         <string>Spacing*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_spacingWidth">
+        <property name="decimals">
+         <number>6</number>
+        </property>
+        <property name="maximum">
+         <double>9999999.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.001000000000000</double>
+        </property>
+        <property name="value">
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2" colspan="2">
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_spacingHeight">
+        <property name="decimals">
+         <number>6</number>
+        </property>
+        <property name="maximum">
+         <double>9999999.000000000000000</double>
+        </property>
+        <property name="value">
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_spacingDepth">
+        <property name="decimals">
+         <number>6</number>
+        </property>
+        <property name="maximum">
+         <double>9999999.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.001000000000000</double>
+        </property>
+        <property name="value">
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_type">
+        <property name="text">
+         <string>Voxel Type</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="comboBox_VoxelType">
+        <item>
+         <property name="text">
+          <string>unset</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>unsigned int 8</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>unsigned int 16</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="2" colspan="2">
+       <widget class="QSpinBox" name="spinBox_resolutionHeight">
+        <property name="maximum">
+         <number>99999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_worldScale">
+        <property name="decimals">
+         <number>5</number>
+        </property>
+        <property name="singleStep">
+         <double>0.000010000000000</double>
+        </property>
+        <property name="value">
+         <double>0.001000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2" colspan="2">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>World Scale</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QPushButton" name="pushButton_Open">
+     <property name="text">
+      <string>Open</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QPushButton" name="pushButton_ConfigFile">
+     <property name="text">
+      <string>Open Config File</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="4">
+    <widget class="QGroupBox" name="groupBox_VolumeFile">
+     <property name="title">
+      <string>Volume File</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0" colspan="2">
+       <widget class="QGroupBox" name="groupBox_FileType">
+        <property name="title">
+         <string>File Type</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="1">
+          <widget class="QRadioButton" name="radioButton_Directory">
+           <property name="text">
+            <string>Directory</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QRadioButton" name="radioButton_File">
+           <property name="text">
+            <string>File</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QRadioButton" name="radioButton_ImageStack">
+           <property name="text">
+            <string>Image Stack</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QGroupBox" name="groupBox_ImageStack">
+        <property name="title">
+         <string>Image Stack</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0" rowspan="2">
+          <widget class="QListView" name="listView_ImageFiles"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButton_AddImages">
+           <property name="text">
+            <string>Add</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="pushButton_RemoveImages">
+           <property name="text">
+            <string>Remove</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox_File">
+        <property name="title">
+         <string>File</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="lineEdit_File"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButton_File">
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QGroupBox" name="groupBox_Directory">
+        <property name="title">
+         <string>Directory</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_7">
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="lineEdit_Directory"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="pushButton_Directory">
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="5" column="4">
+    <widget class="QPushButton" name="pushButton_Cancel">
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" colspan="4">
+    <widget class="QGroupBox" name="groupBox_AdditionalSettings">
+     <property name="title">
+      <string>Additional Settings</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_8">
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="checkBox_BigEndian">
+        <property name="text">
+         <string>Convert from
+big-endian</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="checkBox_CompressVolume">
+        <property name="text">
+         <string>Compress Volume
+(Save GPU memory)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="checkBox_WhiteBackground">
+        <property name="text">
+         <string>Background is White</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="checkBox_DisableMask">
+        <property name="text">
+         <string>Disable Mask
+(Save GPU and CPU memory)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="4">
+    <widget class="QGroupBox" name="groupBox_Segmentation">
+     <property name="title">
+      <string>Segmentation</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="2">
+       <widget class="QPushButton" name="pushButton_NNFile">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>NN File</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Mask File</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="pushButton_MaskFile">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_MaskFile"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_NNFile"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Density
+File</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_OffsetFile"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="pushButton_OffsetFile">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="1" colspan="4">
+    <widget class="QGroupBox" name="groupBox_ParameterFiles">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Parameter Files</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_10">
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_colorMap">
+        <property name="text">
+         <string>Group File</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_TFFile"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Light File</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_TF">
+        <property name="text">
+         <string>TF File</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_GroupFile"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_LightFile"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="pushButton_GroupFile">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QPushButton" name="pushButton_LightFile">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="pushButton_TFFile">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_GeneralFile"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>General File</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="pushButton_GeneralFile">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>radioButton_File</tabstop>
+  <tabstop>radioButton_Directory</tabstop>
+  <tabstop>radioButton_ImageStack</tabstop>
+  <tabstop>lineEdit_File</tabstop>
+  <tabstop>pushButton_File</tabstop>
+  <tabstop>lineEdit_Directory</tabstop>
+  <tabstop>pushButton_Directory</tabstop>
+  <tabstop>listView_ImageFiles</tabstop>
+  <tabstop>pushButton_AddImages</tabstop>
+  <tabstop>pushButton_RemoveImages</tabstop>
+  <tabstop>spinBox_resolutionWidth</tabstop>
+  <tabstop>spinBox_resolutionHeight</tabstop>
+  <tabstop>spinBox_resolutionDepth</tabstop>
+  <tabstop>doubleSpinBox_spacingWidth</tabstop>
+  <tabstop>doubleSpinBox_spacingHeight</tabstop>
+  <tabstop>doubleSpinBox_spacingDepth</tabstop>
+  <tabstop>comboBox_VoxelType</tabstop>
+  <tabstop>lineEdit_NNFile</tabstop>
+  <tabstop>pushButton_NNFile</tabstop>
+  <tabstop>lineEdit_MaskFile</tabstop>
+  <tabstop>pushButton_MaskFile</tabstop>
+  <tabstop>lineEdit_OffsetFile</tabstop>
+  <tabstop>pushButton_OffsetFile</tabstop>
+  <tabstop>checkBox_CompressVolume</tabstop>
+  <tabstop>checkBox_BigEndian</tabstop>
+  <tabstop>checkBox_DisableMask</tabstop>
+  <tabstop>checkBox_WhiteBackground</tabstop>
+  <tabstop>pushButton_ConfigFile</tabstop>
+  <tabstop>pushButton_Open</tabstop>
+  <tabstop>pushButton_Cancel</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

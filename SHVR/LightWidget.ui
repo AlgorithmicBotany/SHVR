@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LightWidget</class>
+ <widget class="QWidget" name="LightWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>217</width>
+    <height>484</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AOWidget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="23" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_specular">
+     <property name="decimals">
+      <number>3</number>
+     </property>
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.001000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="26" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_rayStepSize">
+     <property name="decimals">
+      <number>4</number>
+     </property>
+     <property name="singleStep">
+      <double>0.000100000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="1">
+    <widget class="QSpinBox" name="spinBox_aoMaxSteps"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QCheckBox" name="checkBox_AutoUpdateGraph">
+     <property name="text">
+      <string>Auto Update</string>
+     </property>
+    </widget>
+   </item>
+   <item row="23" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Specular Intensity:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="0" colspan="2">
+    <widget class="Line" name="line_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>AO Step Size:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="25" column="1">
+    <widget class="QSpinBox" name="spinBox_rayMaxSteps">
+     <property name="maximum">
+      <number>999999</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QCheckBox" name="checkBox_LockIndices">
+     <property name="text">
+      <string>Lock Indices</string>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_ambient">
+     <property name="decimals">
+      <number>3</number>
+     </property>
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.001000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="22" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_diffuse">
+     <property name="decimals">
+      <number>3</number>
+     </property>
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.001000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>Ambient Intensity:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="0">
+    <widget class="QLabel" name="label_updateStatus">
+     <property name="text">
+      <string>--Status--</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Selected CP:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="2">
+    <widget class="AOOpenGLWidget" name="glWidget_graph">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>100</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Light Intensity:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="24" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>Speular Exponent:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_xValue"/>
+   </item>
+   <item row="26" column="0">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>Ray Step Size:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>AO Max Steps:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="1">
+    <widget class="QPushButton" name="pushButton_UpdateGraph">
+     <property name="text">
+      <string>Update AO</string>
+     </property>
+    </widget>
+   </item>
+   <item row="24" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_specularExponent">
+     <property name="maximum">
+      <double>1000.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_yValue"/>
+   </item>
+   <item row="14" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_aoStepSize">
+     <property name="decimals">
+      <number>4</number>
+     </property>
+     <property name="singleStep">
+      <double>0.001000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="22" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>Diffuse Intensity:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1">
+    <widget class="QSpinBox" name="spinBox_SelectedCPIdx"/>
+   </item>
+   <item row="25" column="0">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>Ray Max Steps:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Ambient Value:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_12">
+     <property name="text">
+      <string>X: Light Accumulation</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLabel" name="label_13">
+     <property name="text">
+      <string>Y: Brightness Level</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>AOOpenGLWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>LightWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>checkBox_AutoUpdateGraph</tabstop>
+  <tabstop>checkBox_LockIndices</tabstop>
+  <tabstop>spinBox_SelectedCPIdx</tabstop>
+  <tabstop>doubleSpinBox_xValue</tabstop>
+  <tabstop>doubleSpinBox_yValue</tabstop>
+  <tabstop>pushButton_UpdateGraph</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
