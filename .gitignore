@@ -338,7 +338,7 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
-/SHVR/DataFiles/Data/01-8-bit-ring-removal-cropped.tif
+
 *.layer
 /SHVR/screenshot
 /SHVR/DataFiles/Data
@@ -346,13 +346,3 @@ healthchecksdb
 *.tf
 *.raw
 *.mask
-/SHVR/DataFiles/Bellis2
-/SHVR/DataFiles/Tanacetum1
-/SHVR/DataFiles
-/SHVR/DataFile/Thistle
-/SHVR/DataFile/DryScan
-/SHVR/DataFile
-/SHVR/settings/Original_RGB
-/SHVR/settings/New_RGB
-/SHVR/settings/Blender_Colors
-/Others
