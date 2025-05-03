@@ -34,7 +34,9 @@ Alternatively, run SHVR.exe and drag and drop an image stack (and other SHVR fil
 
 ## Publications
 
-Andrew Owens, Teng Zhang, Philmo Gu, Jeremy Hart, Jarvis Stobbs, Mikolaj Cieslak, Paula Elomaa, and Przemyslaw Prusinkiewicz. The Hidden Diversity of Vascular Patterns in Flower Heads. New Phytologist, https://doi.org/10.1111/nph.19571, 2024.![image](https://github.com/user-attachments/assets/c6bad785-6655-4e5e-963a-1f2e26537279)
+Andrew Owens, Teng Zhang, Philmo Gu, Jeremy Hart, Jarvis Stobbs, Mikolaj Cieslak, Paula Elomaa, and Przemyslaw Prusinkiewicz. The Hidden Diversity of Vascular Patterns in Flower Heads. New Phytologist, https://doi.org/10.1111/nph.19571, 2024.
+- Website: https://algorithmicbotany.org/papers/vasculature2024.html
+
 
 ## Developers
 
