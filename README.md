@@ -32,6 +32,10 @@ or copy these files to the same folder as SHVR.exe. Then, copy the `settings` an
 (3) Set the config file, `settings\default.ini`, and run SHVR.exe to load the image stack.
 Alternatively, run SHVR.exe and drag and drop an image stack (and other SHVR files) into the open SHVR window.
 
+## Publications
+
+Andrew Owens, Teng Zhang, Philmo Gu, Jeremy Hart, Jarvis Stobbs, Mikolaj Cieslak, Paula Elomaa, and Przemyslaw Prusinkiewicz. The Hidden Diversity of Vascular Patterns in Flower Heads. New Phytologist, https://doi.org/10.1111/nph.19571, 2024.![image](https://github.com/user-attachments/assets/c6bad785-6655-4e5e-963a-1f2e26537279)
+
 ## Developers
 
 * Philmo Gu (Main)
